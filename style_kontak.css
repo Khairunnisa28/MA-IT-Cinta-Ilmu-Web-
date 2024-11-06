@@ -63,65 +63,69 @@ nav ul li .dropdown-content a:hover{
   background-color: darkred;
 }
 
-body{
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #eceff2;
-  margin: 0;
+.contact-container{
+  max-width: 600px;
+  margin: 50px auto;
   padding: 20px;
-}
-
-section{
-  margin-bottom: 50px;
-  padding: 30px 20px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #f9f9f9 25%, #e0e0e0 100%);
-}
-
-section h2{
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) ;
   text-align: center;
-  margin-bottom: 20px;
-  color: #007BFF;
-  padding: 10px;
-  background-color: #e9ecef;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Museum Section */
-.tiket_museum {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.tiket_museum .card {
-  margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: none;
   border-radius: 10px;
-  overflow: hidden;
 }
 
-.tiket_museum .card img {
-  height: 200px;
-  object-fit: cover;
-  border-bottom: 1px solid #ddd;
-}
-
-.tiket_museum .card-body {
-  padding: 15px;
-  background-color: #fff;
-}
-
-.tiket_museum .card-title {
+.contact-container h2{
+  font-size: 24px;
   margin-bottom: 10px;
-  font-size: 18px;
-  color: #333;
 }
 
-.tiket_museum .card-text {
-  margin-bottom: 5px;
-  font-size: 14px;
-  color: #555;
+.contact-container h3{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+form input, form textarea{
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  box-sizing:  border-box;
+  font-size: 16px;
+}
+
+form textarea{
+  height: 150px;
+  border-radius: 15px;
+}
+
+form button{
+  background-color: #003087;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover{
+  background-color: #2773ff;
+}
+
+.social-icons{
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  transform: translate(-50%);
+}
+
+.social-icons a{
+  display: block;
+  margin: 10px 0;
+  color: #FFCC00;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.social-icons a:hover{
+  color: #f9d751;
 }
